@@ -1,5 +1,5 @@
 {
-    "name": "tdx/framework",
+    "name": "sztdx/framework",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -9,7 +9,7 @@
     "description": "",
     "autoload": {
         "psr-4": {
-            "Tdx\\Framework\\": "src/"
+            "Sztdx\\Framework\\": "src/"
         }
     },
     "autoload-dev": {
@@ -43,7 +43,7 @@
     },
     "extra": {
         "hyperf": {
-            "config": "Tdx\\Framework\\ConfigProvider"
+            "config": "Sztdx\\Framework\\ConfigProvider"
         }
     }
 }
