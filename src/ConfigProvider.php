@@ -9,7 +9,12 @@ declare(strict_types=1);
  * @contact  group@hyperf.io
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
+
 namespace Sztdx\Framework;
+
+use Hyperf\HttpServer\Contract\RequestInterface as HyRequestInterface;
+use Hyperf\HttpServer\Contract\ResponseInterface as HyResponseInterface;
+use Sztdx\Http\Request;
 
 class ConfigProvider
 {
@@ -17,6 +22,8 @@ class ConfigProvider
     {
         return [
             'dependencies' => [
+                HyRequestInterface::class => Request::class,
+                HyResponseInterface::class => Request::class
             ],
             'commands' => [
             ],
